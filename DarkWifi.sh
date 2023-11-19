@@ -1,24 +1,36 @@
 #!/bin/bash
 
-tool_name="EvilWifi"
+tool_name="DarkWifi"
 install_dir="/usr/local/bin"
 cp "$0" "$install_dir/$tool_name"
 
 chmod +x "$install_dir/$tool_name" 
  
-red='\e[31m'
+red1='\e[31m'
 green='\033[0;32m'
 nc='\033[0m'
 blue='\e[34m'
 i=1
 clear
 
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${red1}------------ This tool by Ahmed Tamer ------------\n${nc}"
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
 
+echo -ne "click enter to continue"
+read -s
+
+cle
 
 com=$(iwconfig)
 echo "$com"
 
-echo -ne "${blue}Enter your WLAN adapter name:${nc} "
+echo -ne  "${blue}Enter your wireless Adapter name :${nc}"
+
 read ad
 
 clear
@@ -28,11 +40,11 @@ monitor_interface="${ad}"
 if iwconfig 2>&1 | grep -q "$monitor_interface"; then
     echo -ne "${green}Monitor mode interface $monitor_interface exists.${nc}"
 else
-    echo -ne "${red}This adapter cant use the tool.${nc}"
+    echo -ne "${red1}This adapter cant use the tool.${nc}"
     exit 1
 fi
 
-sleep 3
+sleep 1
 
 clear
 
@@ -74,9 +86,10 @@ echo -ne "${blue}Enter the dic of the wordlist that you want to use :"
 
 read word
 
-sleep 5
+sleep 1
 
-aircrack-ng "$(dic).cap"  -w  "$word"
+dic2="${dic}-01.cap"
 
+aircrack-ng "$dic2"  -w  "$word"
 
 
