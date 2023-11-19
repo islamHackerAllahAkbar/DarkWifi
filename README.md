@@ -6,7 +6,9 @@ remember this is only for educational purpose.
 ## Description:
 This tool will save your time and write code to make Penetration testing on the network :)
 ## Download : 
-git clone https://github.com/islamHackerAllahAkbar/DarkWifi.git
-cd DarkWifi
-chmod +x ./DarkWifi.sh
-./DarkWifi.sh
+git clone https://github.com/islamHackerAllahAkbar/DarkWifi.git <br>
+cd DarkWifi <br>
+chmod +x ./DarkWifi.sh <br>
+./DarkWifi.sh <br>
+after you install it you can use this command to open the tool : <br>
+DarkWifi
