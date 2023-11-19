@@ -12,3 +12,8 @@ chmod +x ./DarkWifi.sh <br>
 ./DarkWifi.sh <br>
 after you install it you can use this command to open the tool : <br>
 DarkWifi
+## Update the tool :
+cd Darkwifi <br>
+chmod <br>
+chmod +x ./update.sh <br>
+./update.sh
