@@ -24,7 +24,7 @@ echo -ne -n "${blue}--------------------------------------------------\n${nc}"
 echo -ne "click enter to continue"
 read -s
 
-cle
+clear
 
 com=$(iwconfig)
 echo "$com"
