@@ -1,4 +1,4 @@
-## DarkWifi 1.0 [Under Program]
+## DarkWifi 1.1 [Under Program]
 This tool is made by Ahmed tamer 14 years old so if you see error sorry I will update the tool to solve the problem
 ## Legal Disclamer:
 The author does not hold any responsibility for the bad use of this tool,
@@ -15,3 +15,6 @@ DarkWifi
 cd Darkwifi <br>
  <br>
 chmod +x ./update.sh && ./update.sh
+
+## update log : 
+<h1 style="color: green">1.1</h1> <br>
