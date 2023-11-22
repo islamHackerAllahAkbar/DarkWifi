@@ -1,4 +1,4 @@
-## DarkWifi 1.1 [Under Program]
+## DarkWifi 1.3 [Under Program]
 This tool is made by Ahmed tamer 14 years old so if you see error sorry I will update the tool to solve the problem
 ## Legal Disclamer:
 The author does not hold any responsibility for the bad use of this tool,
@@ -20,3 +20,5 @@ chmod +x ./update.sh && ./update.sh
 <h2>1.1[2023-11-22] :</h2> <br> 
 solve many errors <br>
 Now the tool will download Genome-Terminal automatic for you :)
+<h2>1.1[2023-11-23] :</h2> <br> 
+New GUI and many featurs :)
