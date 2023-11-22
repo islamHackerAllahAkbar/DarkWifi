@@ -5,7 +5,23 @@ install_dir="/usr/local/bin"
 cp "$0" "$install_dir/$tool_name"
 
 chmod +x "$install_dir/$tool_name" 
+
+clear
  
+if ! command -v gnome-terminal &> /dev/null; then
+    echo "gnome-terminal is not installed. Installing it now..."
+
+    # Install gnome-terminal
+    sudo apt update
+    sudo apt install gnome-terminal -y
+
+    echo "gnome-terminal has been installed."
+else
+    echo "gnome-terminal is already installed."
+fi
+
+sleep 2
+
 red1='\e[31m'
 green='\033[0;32m'
 nc='\033[0m'
