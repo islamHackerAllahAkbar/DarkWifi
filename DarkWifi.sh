@@ -15,12 +15,12 @@ if ! command -v gnome-terminal &> /dev/null; then
     sudo apt update
     sudo apt install gnome-terminal -y
 
-    echo "gnome-terminal has been installed."
+   clear
 else
-    echo "gnome-terminal is already installed."
+    clear
 fi
 
-sleep 2
+sleep 1
 
 red1='\e[31m'
 green='\033[0;32m'
@@ -32,13 +32,44 @@ clear
 echo -ne -n "${blue}--------------------------------------------------\n${nc}"
 echo -ne -n "${blue}--------------------------------------------------\n${nc}"
 echo -ne -n "${blue}--------------------------------------------------\n${nc}"
-echo -ne -n "${red1}------------ This tool by Ahmed Tamer ------------\n${nc}"
+echo -ne -n "${blue}-------------------- ${red1}DarkWifi${blue} --------------------\n${nc}"
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${blue}------------------- ${red1}AhmedTamer${blue} -------------------\n${nc}"
 echo -ne -n "${blue}--------------------------------------------------\n${nc}"
 echo -ne -n "${blue}--------------------------------------------------\n${nc}"
 echo -ne -n "${blue}--------------------------------------------------\n${nc}"
 
 echo -ne "click enter to continue"
 read -s
+
+clear
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${blue}--------------------------------------------------\n${nc}"
+echo -ne -n "${blue}-------------------- ${red1}DarkWifi${blue} --------------------\n${nc}"
+echo -ne -n "${blue}${red}[01]${nc}${green}hack wifi (handshake): \n${nc}"
+echo -ne -n "${blue}${red}[02]${nc}${green}exit from the tool: \n${nc}"
+
+echo -ne "enter the number of option : "
+read num
+
+if [ "$num" = "1" ] || [ "$num" = "01" ]; then
+
+clear
+
+else
+
+if [ "$num" = "2" ] || [ "$num" = "02" ]; then
+    echo "Exiting the script."
+    sleep2
+    exit 3
+else
+    echo "Invalid input. Exiting the script."
+    exit 4
+
+fi
+fi
 
 clear
 
@@ -107,5 +138,4 @@ sleep 1
 dic2="${dic}-01.cap"
 
 aircrack-ng "$dic2"  -w  "$word"
-
 
