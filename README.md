@@ -17,6 +17,6 @@ cd Darkwifi <br>
 chmod +x ./update.sh && ./update.sh
 
 ## update log : 
-<h2>1.1 :</h2> <br>
+<h2>1.1[2023-11-22] :</h2> <br> 
 solve many errors <br>
 Now the tool will download Genome-Terminal automatic for you :)
