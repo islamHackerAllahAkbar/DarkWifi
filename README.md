@@ -8,12 +8,10 @@ This tool will save your time and write code to make Penetration testing on the 
 ## Download : 
 git clone https://github.com/islamHackerAllahAkbar/DarkWifi.git <br>
 cd DarkWifi <br>
-chmod +x ./DarkWifi.sh <br>
-./DarkWifi.sh <br>
+chmod +x ./DarkWifi.sh && ./DarkWifi.sh <br>
 after you install it you can use this command to open the tool : <br>
 DarkWifi
 ## Update the tool :
 cd Darkwifi <br>
-chmod <br>
-chmod +x ./update.sh <br>
-./update.sh
+ <br>
+chmod +x ./update.sh && ./update.sh
