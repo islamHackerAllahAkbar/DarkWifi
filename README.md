@@ -17,4 +17,4 @@ cd Darkwifi <br>
 chmod +x ./update.sh && ./update.sh
 
 ## update log : 
-<h1 style="color: green">1.1</h1> <br>
+<h1 style="color:green">1.1</h1> <br>
