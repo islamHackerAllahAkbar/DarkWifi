@@ -22,3 +22,6 @@ solve many errors <br>
 Now the tool will download Genome-Terminal automatic for you :)
 <h2>1.1[2023-11-23] :</h2> <br> 
 New GUI and many featurs :)
+
+## tested on : 
+kali linux only :)
